@@ -11,7 +11,7 @@ export class HeadersService {
   sampleHeader() {
     const headers = new HttpHeaders()
       .set('Content-Type', 'application/json');
-    this.http.get(`http://sample.com`, { headers })
+    this.http.get(`http://localhost:4200/httpClient`, { headers })
       .subscribe(() => { });
   }
 

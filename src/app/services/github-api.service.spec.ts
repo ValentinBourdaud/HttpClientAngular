@@ -1,11 +1,12 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { GithubApiService } from './github-api.service';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('GithubApiService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [GithubApiService]
+      providers: [GithubApiService, HttpClient, HttpHandler]
     });
   });
 

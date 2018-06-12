@@ -1,11 +1,12 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { ParamsService } from './params.service';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 
 describe('ParamsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [ParamsService]
+      providers: [ParamsService, HttpClient, HttpHandler]
     });
   });
 

@@ -11,7 +11,7 @@ export class ParamsService {
   sampleParams() {
     const params = new HttpParams()
       .set('login', 'nartawak');
-    this.http.get(`http://sample.com`, { params })
+    this.http.get(`http://localhost:4200/httpClient`, { params })
       .subscribe(() => { });
   }
 }
